@@ -51,5 +51,5 @@ jobs:
           git add merged_subscription.txt clash_subscription.yaml clash_unknown_lines.txt
           git commit -m "🔄 Update subscriptions and clash output: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
 
-          git pull --rebase origin main
+          git pull --no-rebase origin main
           git push origin main
