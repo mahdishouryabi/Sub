@@ -1,0 +1,112 @@
+proxies:
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Chicago🅿️ping:136.3ms"
+    type: trojan
+    server: 172.237.145.189
+    port: 443
+    password: "A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM"
+    sni: 172.237.145.189
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Chicago🅿️ping:136.73ms"
+    type: trojan
+    server: 172.237.145.189
+    port: 443
+    password: "A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM"
+    sni: 172.237.145.189
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Chicago🅿️ping:136.73ms"
+    type: trojan
+    server: 172.237.145.189
+    port: 443
+    password: "A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM"
+    sni: 172.237.145.189
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Chicago🅿️ping:136.73ms"
+    type: trojan
+    server: 172.237.145.189
+    port: 443
+    password: "A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM"
+    sni: 172.237.145.189
+  - name: "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:30.24ms"
+    type: trojan
+    server: 78.159.131.12
+    port: 28259
+    password: "MeaDiUmPlkWbZJ2BON8tz"
+    sni: 78.159.131.12
+  - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:85.71ms"
+    type: trojan
+    server: vip-srv-for-you.parsiclouds.ir
+    port: 443
+    password: "SHAMOJ3rnxb5LyMDn6CRXA"
+    sni: vip-srv-for-you.parsiclouds.ir
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.7ms"
+    type: trojan
+    server: 91.107.162.63
+    port: 8443
+    password: "SoftNetConnect"
+    sni: 91.107.162.63
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.9ms"
+    type: trojan
+    server: 104.19.229.21
+    port: 443
+    password: "humanity"
+    sni: 104.19.229.21
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.9ms"
+    type: trojan
+    server: 104.19.229.21
+    port: 443
+    password: "humanity"
+    sni: 104.19.229.21
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Austin (Downtown Austin)🅿️ping:43.06ms"
+    type: trojan
+    server: 141.193.213.11
+    port: 443
+    password: "humanity"
+    sni: 141.193.213.11
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Ann Arbor (Bryant Pattengill East)🅿️ping:43.15ms"
+    type: trojan
+    server: 165.215.250.14
+    port: 443
+    password: "humanity"
+    sni: 165.215.250.14
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:52.71ms"
+    type: trojan
+    server: 188.114.97.6
+    port: 443
+    password: "humanity"
+    sni: 188.114.97.6
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:26.24ms"
+    type: trojan
+    server: 172.238.120.124
+    port: 443
+    password: "r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ"
+    sni: 172.238.120.124
+  - name: "👉🆔@v2ray_configs_pool📡🇭🇰®️Hong Kong©️Hong Kong🅿️ping:209.32ms"
+    type: vmess
+    server: 47.238.130.197
+    port: 443
+    uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
+    alterId: 0
+    tls: true
+    network: ws
+    ws-path: "/"
+    ws-headers:
+      Host: "n1753348736.lie5d.cyou"
+
+proxy-groups:
+  - name: "Auto"
+    type: select
+    proxies:
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Chicago🅿️ping:136.3ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Chicago🅿️ping:136.73ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Chicago🅿️ping:136.73ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Chicago🅿️ping:136.73ms"
+      - "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:30.24ms"
+      - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:85.71ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.7ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.9ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.9ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Austin (Downtown Austin)🅿️ping:43.06ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Ann Arbor (Bryant Pattengill East)🅿️ping:43.15ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:52.71ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:26.24ms"
+      - "👉🆔@v2ray_configs_pool📡🇭🇰®️Hong Kong©️Hong Kong🅿️ping:209.32ms"
+
+rules:
+  - MATCH,Auto
