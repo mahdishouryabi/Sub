@@ -29,6 +29,9 @@ jobs:
       
       - name: 🔄 Run aggregator
         run: python aggregator.py
+
+      - name: 🔁 Run Clash generator
+        run: python generator_clash.py
       
       - name: 📝 Check if changes exist
         id: verify
@@ -44,6 +47,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add merged_subscription.txt
-          git commit -m "🔄 Update subscriptions: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git add merged_subscription.txt clash_subscription.yaml clash_unknown_lines.txt
+          git commit -m "🔄 Update subscriptions and clash output: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
           git push
