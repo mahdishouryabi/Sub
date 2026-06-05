@@ -1,219 +1,142 @@
 proxies:
-  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.87ms"
-    type: trojan
-    server: 172.64.147.29
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: 172.64.147.29
-  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.87ms"
-    type: trojan
-    server: 172.64.147.29
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: 172.64.147.29
-  - name: "👉🆔@v2ray_configs_pool📡🇸🇨®️Seychelles©️Victoria🅿️ping:45.84ms"
-    type: trojan
-    server: 45.130.125.160
-    port: 443
-    password: "Config0plus"
-    sni: 45.130.125.160
-  - name: "👉🆔@v2ray_configs_pool📡🇲🇽®️Mexico©️Mexico City🅿️ping:164.19ms"
-    type: trojan
-    server: 149.104.87.182
-    port: 443
-    password: "PtRV8to08i8FMsY.Uw7%3DyMuIaR3eVTGmvA"
-    sni: 149.104.87.182
-  - name: "👉🆔@v2ray_configs_pool📡🇲🇽®️Mexico©️Mexico City🅿️ping:164.19ms"
-    type: trojan
-    server: 149.104.87.182
-    port: 443
-    password: "PtRV8to08i8FMsY.Uw7%3DyMuIaR3eVTGmvA"
-    sni: 149.104.87.182
-  - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:111ms"
-    type: trojan
-    server: vip-srv-for-you.parsiclouds.ir
-    port: 443
-    password: "SHAMOJ3rnxb5LyMDn6CRXA"
-    sni: vip-srv-for-you.parsiclouds.ir
-  - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:83.46ms"
-    type: trojan
-    server: vip-srv-for-you.parsiclouds.ir
-    port: 443
-    password: "SHAMOJ3rnxb5LyMDn6CRXA"
-    sni: vip-srv-for-you.parsiclouds.ir
-  - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:85.71ms"
-    type: trojan
-    server: vip-srv-for-you.parsiclouds.ir
-    port: 443
-    password: "SHAMOJ3rnxb5LyMDn6CRXA"
-    sni: vip-srv-for-you.parsiclouds.ir
-  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.6ms"
-    type: trojan
-    server: 91.107.162.63
-    port: 8443
-    password: "SoftNetConnect"
-    sni: 91.107.162.63
-  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.98ms"
-    type: trojan
-    server: 91.107.162.63
-    port: 8443
-    password: "SoftNetConnect"
-    sni: 91.107.162.63
-  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.98ms"
-    type: trojan
-    server: 91.107.162.63
-    port: 8443
-    password: "SoftNetConnect"
-    sni: 91.107.162.63
-  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.98ms"
-    type: trojan
-    server: 91.107.162.63
-    port: 8443
-    password: "SoftNetConnect"
-    sni: 91.107.162.63
-  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.98ms"
-    type: trojan
-    server: 91.107.162.63
-    port: 8443
-    password: "SoftNetConnect"
-    sni: 91.107.162.63
   - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.18ms"
     type: trojan
     server: 104.18.152.233
     port: 443
     password: "humanity"
     sni: 104.18.152.233
-  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Austin (Downtown Austin)🅿️ping:47.85ms"
+  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:33.88ms"
     type: trojan
-    server: 141.193.213.21
-    port: 443
-    password: "humanity"
-    sni: 141.193.213.21
-  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:40.69ms"
-    type: trojan
-    server: 188.114.97.6
-    port: 443
-    password: "humanity"
-    sni: 188.114.97.6
-  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️San Francisco (South of Market)🅿️ping:47ms"
-    type: trojan
-    server: 216.24.57.1
-    port: 443
-    password: "humanity"
-    sni: 216.24.57.1
+    server: 13.39.126.73
+    port: 22222
+    password: "telegram-id-privatevpns"
+    sni: 13.39.126.73
   - name: "👉🆔@v2ray_configs_pool📡🇸🇨®️Seychelles©️Victoria🅿️ping:82.88ms"
     type: trojan
     server: srv1.khatibirepair.ir
     port: 443
     password: "humanity"
     sni: srv1.khatibirepair.ir
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Austin (Downtown Austin)🅿️ping:47.85ms"
+    type: trojan
+    server: 141.193.213.21
+    port: 443
+    password: "humanity"
+    sni: 141.193.213.21
+  - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:83.46ms"
+    type: trojan
+    server: vip-srv-for-you.parsiclouds.ir
+    port: 443
+    password: "SHAMOJ3rnxb5LyMDn6CRXA"
+    sni: vip-srv-for-you.parsiclouds.ir
+  - name: "👉🆔@v2ray_configs_pool📡🇲🇽®️Mexico©️Mexico City🅿️ping:164.19ms"
+    type: trojan
+    server: 149.104.87.182
+    port: 443
+    password: "PtRV8to08i8FMsY.Uw7%3DyMuIaR3eVTGmvA"
+    sni: 149.104.87.182
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:72.36ms"
+    type: trojan
+    server: blackshadow.dpdns.org
+    port: 443
+    password: "2bcfbfba-b446-4ad5-93ad-72af9e008f61"
+    sni: blackshadow.dpdns.org
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:45.79ms"
+    type: trojan
+    server: 172.64.147.29
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: 172.64.147.29
+  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Aubervilliers🅿️ping:34.76ms"
+    type: trojan
+    server: 217.69.2.107
+    port: 443
+    password: "YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh"
+    sni: 217.69.2.107
+  - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:85.26ms"
+    type: trojan
+    server: hakime-kos2.karamoz2.ir
+    port: 443
+    password: "svmykwb2l2v8jpd6"
+    sni: hakime-kos2.karamoz2.ir
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:24.71ms"
+    type: trojan
+    server: 52.28.170.96
+    port: 22222
+    password: "telegram-id-privatevpns"
+    sni: 52.28.170.96
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:24.62ms"
+    type: trojan
+    server: 52.28.170.96
+    port: 22223
+    password: "telegram-id-directvpn"
+    sni: 52.28.170.96
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Chicago🅿️ping:136.73ms"
+    type: trojan
+    server: 172.237.145.189
+    port: 443
+    password: "A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM"
+    sni: 172.237.145.189
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:72.32ms"
+    type: trojan
+    server: blackshadow.dpdns.org
+    port: 443
+    password: "2bcfbfba-b446-4ad5-93ad-72af9e008f61"
+    sni: blackshadow.dpdns.org
+  - name: "👉🆔@v2ray_configs_pool📡🇪🇸®️Spain©️Madrid🅿️ping:43.43ms"
+    type: trojan
+    server: 185.18.250.252
+    port: 443
+    password: "humanity"
+    sni: 185.18.250.252
   - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:75.27ms"
     type: trojan
     server: hakime-kos2.karamoz2.ir
     port: 443
     password: "svmykwb2l2v8jpd6"
     sni: hakime-kos2.karamoz2.ir
-  - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:115ms"
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:86.61ms"
     type: trojan
-    server: hakime-kos2.karamoz2.ir
+    server: www.multiplydose.com
     port: 443
-    password: "svmykwb2l2v8jpd6"
-    sni: hakime-kos2.karamoz2.ir
-  - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:75.27ms"
+    password: "humanity"
+    sni: www.multiplydose.com
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:179.68ms"
     type: trojan
-    server: hakime-kos2.karamoz2.ir
+    server: 172.235.63.252
     port: 443
-    password: "svmykwb2l2v8jpd6"
-    sni: hakime-kos2.karamoz2.ir
-  - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:85ms"
+    password: "bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E"
+    sni: 172.235.63.252
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.98ms"
     type: trojan
-    server: hakime-kos2.karamoz2.ir
-    port: 443
-    password: "svmykwb2l2v8jpd6"
-    sni: hakime-kos2.karamoz2.ir
-  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:32.91ms"
-    type: trojan
-    server: 13.39.126.73
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: 13.39.126.73
-  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:33.88ms"
-    type: trojan
-    server: 13.39.126.73
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: 13.39.126.73
-  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:35.6ms"
-    type: trojan
-    server: 13.39.126.73
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: 13.39.126.73
-  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:33.88ms"
-    type: trojan
-    server: 13.39.126.73
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: 13.39.126.73
-  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:37.56ms"
-    type: trojan
-    server: 15.236.157.22
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: 15.236.157.22
-  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:33.76ms"
-    type: trojan
-    server: 15.236.157.22
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: 15.236.157.22
-  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:37.56ms"
-    type: trojan
-    server: 15.236.157.22
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: 15.236.157.22
-  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:26.47ms"
-    type: trojan
-    server: 63.185.199.92
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: 63.185.199.92
+    server: 91.107.162.63
+    port: 8443
+    password: "SoftNetConnect"
+    sni: 91.107.162.63
 
 proxy-groups:
   - name: "Auto"
     type: select
     proxies:
-      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.87ms"
-      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.87ms"
-      - "👉🆔@v2ray_configs_pool📡🇸🇨®️Seychelles©️Victoria🅿️ping:45.84ms"
-      - "👉🆔@v2ray_configs_pool📡🇲🇽®️Mexico©️Mexico City🅿️ping:164.19ms"
-      - "👉🆔@v2ray_configs_pool📡🇲🇽®️Mexico©️Mexico City🅿️ping:164.19ms"
-      - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:111ms"
-      - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:83.46ms"
-      - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:85.71ms"
-      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.6ms"
-      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.98ms"
-      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.98ms"
-      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.98ms"
-      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.98ms"
       - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.18ms"
-      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Austin (Downtown Austin)🅿️ping:47.85ms"
-      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:40.69ms"
-      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️San Francisco (South of Market)🅿️ping:47ms"
+      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:33.88ms"
       - "👉🆔@v2ray_configs_pool📡🇸🇨®️Seychelles©️Victoria🅿️ping:82.88ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Austin (Downtown Austin)🅿️ping:47.85ms"
+      - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:83.46ms"
+      - "👉🆔@v2ray_configs_pool📡🇲🇽®️Mexico©️Mexico City🅿️ping:164.19ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:72.36ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:45.79ms"
+      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Aubervilliers🅿️ping:34.76ms"
+      - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:85.26ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:24.71ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:24.62ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Chicago🅿️ping:136.73ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:72.32ms"
+      - "👉🆔@v2ray_configs_pool📡🇪🇸®️Spain©️Madrid🅿️ping:43.43ms"
       - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:75.27ms"
-      - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:115ms"
-      - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:75.27ms"
-      - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:85ms"
-      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:32.91ms"
-      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:33.88ms"
-      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:35.6ms"
-      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:33.88ms"
-      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:37.56ms"
-      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:33.76ms"
-      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:37.56ms"
-      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:26.47ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:86.61ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:179.68ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:31.98ms"
 
 rules:
   - MATCH,Auto
