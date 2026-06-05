@@ -5,6 +5,7 @@ Supports: vmess://, trojan://, ss:// (basic)
 """
 import base64
 import json
+import re
 from pathlib import Path
 from urllib.parse import urlparse, unquote
 
@@ -18,6 +19,32 @@ def safe_b64_decode(s: str) -> bytes:
     return base64.urlsafe_b64decode(s)
 
 
+def sanitize_yaml_string(value: str) -> str:
+    if value is None:
+        return ''
+    if not isinstance(value, str):
+        value = str(value)
+    # remove invalid control characters
+    value = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', value)
+    value = value.replace('\\', '\\\\').replace('"', '\\"')
+    value = value.replace('\n', ' ').replace('\r', ' ')
+    return value.strip()
+
+
+def normalize_proxy_name(name: str, proxy_type: str, server: str, port: int) -> str:
+    name = sanitize_yaml_string(name)
+    # keep only safe ASCII characters for Clash names
+    name = re.sub(r'[^A-Za-z0-9 _\-\.:@]', '_', name)
+    name = re.sub(r'\s+', ' ', name).strip()
+    if not name:
+        return f"{proxy_type}@{server}:{port}"
+    return name
+
+
+def yaml_string(value: str) -> str:
+    return f'"{sanitize_yaml_string(value)}"'
+
+
 def parse_vmess(uri: str):
     data_b64 = uri[len('vmess://'):]
     try:
@@ -25,7 +52,10 @@ def parse_vmess(uri: str):
         obj = json.loads(decoded)
     except Exception:
         return None
-    name = obj.get('ps') or obj.get('name') or f"vmess@{obj.get('add','') }"
+    raw_name = obj.get('ps') or obj.get('name') or ''
+    server = obj.get('add', '')
+    port = int(obj.get('port', 0) or 0)
+    name = normalize_proxy_name(raw_name, 'vmess', server, port)
     proxy = {
         'name': name,
         'type': 'vmess',
@@ -60,7 +90,8 @@ def parse_trojan(uri: str):
         return None
     if p.scheme != 'trojan':
         return None
-    name = unquote(p.fragment) if p.fragment else f"trojan@{p.hostname}"
+    raw_name = unquote(p.fragment) if p.fragment else ''
+    name = normalize_proxy_name(raw_name, 'trojan', p.hostname or '', int(p.port or 443))
     proxy = {
         'name': name,
         'type': 'trojan',
@@ -84,7 +115,10 @@ def parse_ss(uri: str):
             method, password = left.split(':', 1)
             hostport, *frag = right.split('#')
             host, port = hostport.split(':')
-            name = unquote(frag[0]) if frag else f"ss@{host}"
+            raw_name = unquote(frag[0]) if frag else ''
+            name = normalize_proxy_name(raw_name, 'ss', host, int(port))
+            raw_name = unquote(parts[1]) if len(parts) > 1 else ''
+            name = normalize_proxy_name(raw_name, 'ss', host, int(port))
             proxy = {
                 'name': name,
                 'type': 'ss',
@@ -124,35 +158,36 @@ def to_yaml_block(proxies):
     lines = []
     lines.append('proxies:')
     for p in proxies:
-        lines.append(f"  - name: \"{p.get('name','') }\"")
-        lines.append(f"    type: {p.get('type')}")
-        lines.append(f"    server: {p.get('server','')}")
-        lines.append(f"    port: {p.get('port',0)}")
+        name = sanitize_yaml_string(p.get('name','') or '')
+        lines.append(f"  - name: \"{name}\"")
+        lines.append(f"    type: {sanitize_yaml_string(p.get('type',''))}")
+        lines.append(f"    server: \"{sanitize_yaml_string(p.get('server',''))}\"")
+        lines.append(f"    port: {int(p.get('port',0))}")
         if p['type'] == 'vmess':
-            if 'uuid' in p:
-                lines.append(f"    uuid: {p.get('uuid')}")
-            lines.append(f"    alterId: {p.get('alterId',0)}")
+            if 'uuid' in p and p.get('uuid'):
+                lines.append(f"    uuid: \"{sanitize_yaml_string(p.get('uuid'))}\"")
+            lines.append(f"    alterId: {int(p.get('alterId',0))}")
             if p.get('tls'):
                 lines.append(f"    tls: true")
             if p.get('network'):
-                lines.append(f"    network: {p.get('network')}")
+                lines.append(f"    network: {sanitize_yaml_string(p.get('network'))}")
             if p.get('ws-path'):
-                lines.append(f"    ws-path: \"{p.get('ws-path')}\"")
+                lines.append(f"    ws-path: \"{sanitize_yaml_string(p.get('ws-path'))}\"")
             if p.get('ws-headers'):
                 lines.append(f"    ws-headers:")
                 for k, v in p.get('ws-headers', {}).items():
-                    lines.append(f"      {k}: \"{v}\"")
+                    lines.append(f"      {sanitize_yaml_string(k)}: \"{sanitize_yaml_string(v)}\"")
         elif p['type'] == 'trojan':
-            lines.append(f"    password: \"{p.get('password','')}\"")
+            lines.append(f"    password: \"{sanitize_yaml_string(p.get('password',''))}\"")
             if p.get('sni'):
-                lines.append(f"    sni: {p.get('sni')}")
+                lines.append(f"    sni: \"{sanitize_yaml_string(p.get('sni'))}\"")
         elif p['type'] == 'ss':
-            lines.append(f"    cipher: {p.get('cipher','')}")
-            lines.append(f"    password: \"{p.get('password','')}\"")
+            lines.append(f"    cipher: \"{sanitize_yaml_string(p.get('cipher',''))}\"")
+            lines.append(f"    password: \"{sanitize_yaml_string(p.get('password',''))}\"")
     # add a simple proxy-group and rules
     lines.append('')
     lines.append('proxy-groups:')
-    group_names = [p.get('name','').replace('\"','') for p in proxies]
+    group_names = [sanitize_yaml_string(p.get('name','')) for p in proxies]
     lines.append('  - name: "Auto"')
     lines.append('    type: select')
     lines.append('    proxies:')
