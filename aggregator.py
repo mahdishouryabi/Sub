@@ -98,32 +98,36 @@ def aggregate_subscriptions(config: dict) -> str:
     print(f"\n🔄 شروع دانلود {len(config['subscriptions'])} subscription...")
     print("-" * 50)
 
+    # پردازش به صورت ترتیبی بر اساس ترتیب URL‌ها؛ اگر نام یکسان دیده شد، مورد جدید جایگزین قبلی می‌شود
+    seen_exact = set()
+    name_to_line = {}
+    no_name_lines = []
+
     for url in config['subscriptions']:
         content = fetch_subscription(url, config.get('timeout', 10))
-        unique_lines = deduplicate_lines(content)
-        all_lines.update(unique_lines)
-        print(f"   ➕ {len(unique_lines)} خط اضافه شد")
-
-    print("-" * 50)
-    print(f"📊 یافت شده {len(all_lines)} خط منحصربه‌فرد (براساس مقایسه خام)")
-
-    # اکنون خطوطی که اسم یکسان دارند را حذف می‌کنیم (فقط اولین مورد نگه داشته می‌شود)
-    seen_names = set()
-    final_lines = []
-
-    for line in sorted(all_lines):
-        name = extract_name(line)
-        if name:
-            if name in seen_names:
-                # skip duplicate by name
+        lines = [l.strip() for l in content.splitlines() if l.strip()]
+        print(f"   ➕ {len(lines)} خط از {url}")
+        for line in lines:
+            if line in seen_exact:
                 continue
-            seen_names.add(name)
-            final_lines.append(line)
-        else:
-            # اگر اسم مشخصی نداریم، با مقایسه‌ی کامل خط تصمیم می‌گیریم
-            final_lines.append(line)
+            seen_exact.add(line)
+            name = extract_name(line)
+            if name:
+                # اگر قبلاً نام دیده شده، حذف و دوباره درج می‌کنیم تا ترتیبِ جدید حفظ شود
+                if name in name_to_line:
+                    try:
+                        del name_to_line[name]
+                    except KeyError:
+                        pass
+                name_to_line[name] = line
+            else:
+                # خطوط بدون نام را نگه می‌داریم (تک‌رشته‌ای)
+                no_name_lines.append(line)
 
-    print(f"📊 پس از حذف هم‌نام‌ها: {len(final_lines)} خط باقی ماند")
+    # ترکیب خروجی: ابتدا خطوط بدون نام (مرتب‌شده)، سپس خطوط با نام به‌ترتیب آخرین وقوع
+    final_lines = sorted(no_name_lines) + list(name_to_line.values())
+    print(f"-" * 50)
+    print(f"📊 پس از حذف تکراری‌ها و هم‌نام‌ها: {len(final_lines)} خط باقی ماند")
 
     result = '\n'.join(final_lines)
     return result
