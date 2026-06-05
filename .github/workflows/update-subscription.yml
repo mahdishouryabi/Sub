@@ -3,7 +3,7 @@ name: Update Subscriptions
 on:
   schedule:
     # هر 30 دقیقه یکبار اجرا شود
-    - cron: '*/30 * * * *'
+    - cron: '*/2 * * * *'
   workflow_dispatch:
     # دستی اجرا کن
 
