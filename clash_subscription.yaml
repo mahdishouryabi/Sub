@@ -1,135 +1,164 @@
 proxies:
-  - name: "__@v2ray_configs_pool_____United States__Belmont__ping:43.94ms"
-    type: trojan
-    server: "66.81.247.155"
-    port: 443
-    password: "humanity"
-    sni: "66.81.247.155"
-  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:76.73ms"
-    type: trojan
-    server: "www.creationlong.org"
-    port: 443
-    password: "humanity"
-    sni: "www.creationlong.org"
-  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:46.78ms"
-    type: trojan
-    server: "104.16.7.70"
-    port: 443
-    password: "humanity"
-    sni: "104.16.7.70"
-  - name: "__@v2ray_configs_pool_____United Kingdom__London__ping:77.17ms"
-    type: trojan
-    server: "hakime-kos2.karamoz2.ir"
-    port: 443
-    password: "svmykwb2l2v8jpd6"
-    sni: "hakime-kos2.karamoz2.ir"
-  - name: "__@v2ray_configs_pool_____United States__San Francisco _South of Market___ping:48.48ms"
-    type: trojan
-    server: "216.24.57.1"
-    port: 443
-    password: "humanity"
-    sni: "216.24.57.1"
-  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:44.75ms"
-    type: trojan
-    server: "104.19.2.175"
-    port: 443
-    password: "humanity"
-    sni: "104.19.2.175"
-  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:48.59ms"
+  - name: "__@v2ray_configs_pool_____Germany__Limburg an der Lahn__ping:786ms"
+    type: vmess
+    server: "6654c734ccab8f440ff0825eb443dc7f.qos.onl"
+    port: 10049
+    uuid: "52f9cbfb-5bb3-3dd3-b947-725e365c59f3"
+    alterId: 0
+    network: ws
+    ws-path: "/"
+    ws-headers:
+      Host: "v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com"
+  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:47.0ms"
     type: trojan
     server: "104.19.229.21"
     port: 443
-    password: "bb45f73f-795b-4a05-a8e0-ba717bce87e3"
+    password: "Config0plus"
     sni: "104.19.229.21"
-  - name: "__@v2ray_configs_pool_____Seychelles__Victoria__ping:43.17ms"
+  - name: "__@v2ray_configs_pool_____Germany__Limburg an der Lahn__ping:426ms"
+    type: vmess
+    server: "6654c734ccab8f440ff0825eb443dc7f.qos.onl"
+    port: 10049
+    uuid: "52f9cbfb-5bb3-3dd3-b947-725e365c59f3"
+    alterId: 0
+    network: ws
+    ws-path: "/"
+    ws-headers:
+      Host: "v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com"
+  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:45.18ms"
     type: trojan
-    server: "45.130.125.0"
-    port: 443
-    password: "Config0plus"
-    sni: "45.130.125.0"
-  - name: "__@v2ray_configs_pool_____United States__San Francisco _Mission San Rafael___ping:45.98ms"
-    type: trojan
-    server: "208.103.161.170"
-    port: 443
-    password: "386bd471-4e29-4e79-9a3c-6bc6076ce4b6"
-    sni: "208.103.161.170"
-  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:82.3ms"
-    type: trojan
-    server: "api24-normal.tiktokv.com.cyylr.eu.cc"
-    port: 443
-    password: "Config0plus"
-    sni: "api24-normal.tiktokv.com.cyylr.eu.cc"
-  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:45.83ms"
-    type: trojan
-    server: "104.16.75.127"
-    port: 443
-    password: "Config0plus"
-    sni: "104.16.75.127"
-  - name: "__@v2ray_configs_pool_____Seychelles__Victoria__ping:43.5ms"
-    type: trojan
-    server: "45.130.125.69"
+    server: "104.19.229.21"
     port: 443
     password: "humanity"
-    sni: "45.130.125.69"
-  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:38.04ms"
+    sni: "104.19.229.21"
+  - name: "__@v2ray_configs_pool_____United States__Austin _Downtown Austin___ping:45.39ms"
+    type: trojan
+    server: "141.193.213.10"
+    port: 443
+    password: "6b7f37af-a853-4f01-a031-5fa4eca4f5bf"
+    sni: "141.193.213.10"
+  - name: "__@v2ray_configs_pool_____Germany__Frankfurt am Main__ping:24.23ms"
+    type: trojan
+    server: "63.185.124.176"
+    port: 22223
+    password: "telegram-id-directvpn"
+    sni: "63.185.124.176"
+  - name: "__@v2ray_configs_pool_____Germany__Frankfurt am Main__ping:24.64ms"
+    type: trojan
+    server: "63.185.124.176"
+    port: 22222
+    password: "telegram-id-privatevpns"
+    sni: "63.185.124.176"
+  - name: "__@v2ray_configs_pool_____Seychelles__Victoria__ping:218.16ms"
+    type: trojan
+    server: "srv1.khatibirepair.ir"
+    port: 443
+    password: "humanity"
+    sni: "srv1.khatibirepair.ir"
+  - name: "__@v2ray_configs_pool_____Seychelles__Victoria__ping:43.32ms"
+    type: trojan
+    server: "45.130.125.76"
+    port: 443
+    password: "mitivpn"
+    sni: "45.130.125.76"
+  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:40.28ms"
     type: trojan
     server: "188.114.97.6"
     port: 443
     password: "mitivpn"
     sni: "188.114.97.6"
-  - name: "__@v2ray_configs_pool_____United States__Austin _Downtown Austin___ping:48.58ms"
+  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:47.07ms"
     type: trojan
-    server: "141.193.213.11"
+    server: "104.16.75.127"
+    port: 443
+    password: "Config0plus"
+    sni: "104.16.75.127"
+  - name: "__@v2ray_configs_pool_____United States__Austin _Downtown Austin___ping:43.38ms"
+    type: trojan
+    server: "141.193.213.21"
     port: 443
     password: "humanity"
-    sni: "141.193.213.11"
-  - name: "__@v2ray_configs_pool_____Estonia__Tallinn _Kesklinna linnaosa___ping:44.81ms"
+    sni: "141.193.213.21"
+  - name: "__@v2ray_configs_pool_____Spain__Madrid__ping:44.8ms"
+    type: trojan
+    server: "185.18.250.252"
+    port: 443
+    password: "humanity"
+    sni: "185.18.250.252"
+  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:48.03ms"
+    type: trojan
+    server: "172.64.149.54"
+    port: 2096
+    password: "8r%3C%5B9%27l6hAO%238ZQi"
+    sni: "172.64.149.54"
+  - name: "__@v2ray_configs_pool_____United States__Austin _Downtown Austin___ping:46.69ms"
+    type: trojan
+    server: "141.193.213.30"
+    port: 443
+    password: "bb45f73f-795b-4a05-a8e0-ba717bce87e3"
+    sni: "141.193.213.30"
+  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:37.04ms"
+    type: trojan
+    server: "188.114.97.6"
+    port: 443
+    password: "mitivpn"
+    sni: "188.114.97.6"
+  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:117.5ms"
+    type: trojan
+    server: "www.ignitelimit.com"
+    port: 443
+    password: "humanity"
+    sni: "www.ignitelimit.com"
+  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:42.52ms"
+    type: trojan
+    server: "104.20.6.134"
+    port: 443
+    password: "humanity"
+    sni: "104.20.6.134"
+  - name: "__@v2ray_configs_pool_____United States__Chicago__ping:136.54ms"
+    type: trojan
+    server: "172.237.145.189"
+    port: 443
+    password: "A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6%3DVIM"
+    sni: "172.237.145.189"
+  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:43.99ms"
+    type: trojan
+    server: "104.19.229.21"
+    port: 443
+    password: "humanity"
+    sni: "104.19.229.21"
+  - name: "__@v2ray_configs_pool_____Estonia__Tallinn _Kesklinna linnaosa___ping:43.3ms"
     type: trojan
     server: "45.80.108.236"
     port: 8443
     password: "ICVPNN"
     sni: "45.80.108.236"
-  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:39.29ms"
-    type: trojan
-    server: "188.114.98.0"
-    port: 443
-    password: "humanity"
-    sni: "188.114.98.0"
-  - name: "__@v2ray_configs_pool_____United States__Richardson__ping:145.7ms"
-    type: trojan
-    server: "45.79.8.17"
-    port: 443
-    password: "rXyShM8Jni%2B5Sbq3k4gkyr5Lq0zOMRL2Uf"
-    sni: "45.79.8.17"
-  - name: "__@v2ray_configs_pool_____Canada__Toronto__ping:31.78ms"
-    type: trojan
-    server: "188.114.97.6"
-    port: 443
-    password: "humanity"
-    sni: "188.114.97.6"
 
 proxy-groups:
   - name: "Auto"
     type: select
     proxies:
-      - "__@v2ray_configs_pool_____United States__Belmont__ping:43.94ms"
-      - "__@v2ray_configs_pool_____Canada__Toronto__ping:76.73ms"
-      - "__@v2ray_configs_pool_____Canada__Toronto__ping:46.78ms"
-      - "__@v2ray_configs_pool_____United Kingdom__London__ping:77.17ms"
-      - "__@v2ray_configs_pool_____United States__San Francisco _South of Market___ping:48.48ms"
-      - "__@v2ray_configs_pool_____Canada__Toronto__ping:44.75ms"
-      - "__@v2ray_configs_pool_____Canada__Toronto__ping:48.59ms"
-      - "__@v2ray_configs_pool_____Seychelles__Victoria__ping:43.17ms"
-      - "__@v2ray_configs_pool_____United States__San Francisco _Mission San Rafael___ping:45.98ms"
-      - "__@v2ray_configs_pool_____Canada__Toronto__ping:82.3ms"
-      - "__@v2ray_configs_pool_____Canada__Toronto__ping:45.83ms"
-      - "__@v2ray_configs_pool_____Seychelles__Victoria__ping:43.5ms"
-      - "__@v2ray_configs_pool_____Canada__Toronto__ping:38.04ms"
-      - "__@v2ray_configs_pool_____United States__Austin _Downtown Austin___ping:48.58ms"
-      - "__@v2ray_configs_pool_____Estonia__Tallinn _Kesklinna linnaosa___ping:44.81ms"
-      - "__@v2ray_configs_pool_____Canada__Toronto__ping:39.29ms"
-      - "__@v2ray_configs_pool_____United States__Richardson__ping:145.7ms"
-      - "__@v2ray_configs_pool_____Canada__Toronto__ping:31.78ms"
+      - "__@v2ray_configs_pool_____Germany__Limburg an der Lahn__ping:786ms"
+      - "__@v2ray_configs_pool_____Canada__Toronto__ping:47.0ms"
+      - "__@v2ray_configs_pool_____Germany__Limburg an der Lahn__ping:426ms"
+      - "__@v2ray_configs_pool_____Canada__Toronto__ping:45.18ms"
+      - "__@v2ray_configs_pool_____United States__Austin _Downtown Austin___ping:45.39ms"
+      - "__@v2ray_configs_pool_____Germany__Frankfurt am Main__ping:24.23ms"
+      - "__@v2ray_configs_pool_____Germany__Frankfurt am Main__ping:24.64ms"
+      - "__@v2ray_configs_pool_____Seychelles__Victoria__ping:218.16ms"
+      - "__@v2ray_configs_pool_____Seychelles__Victoria__ping:43.32ms"
+      - "__@v2ray_configs_pool_____Canada__Toronto__ping:40.28ms"
+      - "__@v2ray_configs_pool_____Canada__Toronto__ping:47.07ms"
+      - "__@v2ray_configs_pool_____United States__Austin _Downtown Austin___ping:43.38ms"
+      - "__@v2ray_configs_pool_____Spain__Madrid__ping:44.8ms"
+      - "__@v2ray_configs_pool_____Canada__Toronto__ping:48.03ms"
+      - "__@v2ray_configs_pool_____United States__Austin _Downtown Austin___ping:46.69ms"
+      - "__@v2ray_configs_pool_____Canada__Toronto__ping:37.04ms"
+      - "__@v2ray_configs_pool_____Canada__Toronto__ping:117.5ms"
+      - "__@v2ray_configs_pool_____Canada__Toronto__ping:42.52ms"
+      - "__@v2ray_configs_pool_____United States__Chicago__ping:136.54ms"
+      - "__@v2ray_configs_pool_____Canada__Toronto__ping:43.99ms"
+      - "__@v2ray_configs_pool_____Estonia__Tallinn _Kesklinna linnaosa___ping:43.3ms"
 
 rules:
   - MATCH,Auto
