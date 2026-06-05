@@ -1,0 +1,57 @@
+name: loop
+
+on:
+schedule:
+- cron: '*/30 * * * *'
+workflow_dispatch:
+
+permissions:
+contents: write
+
+jobs:
+aggregate:
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: 📥 Clone repository
+    uses: actions/checkout@v4
+    with:
+      fetch-depth: 0
+
+  - name: 🐍 Setup Python
+    uses: actions/setup-python@v4
+    with:
+      python-version: '3.10'
+
+  - name: 📦 Install dependencies
+    run: |
+      pip install requests
+
+  - name: 🔄 Run aggregator
+    run: python aggregator.py
+
+  - name: 🔁 Run Clash generator
+    run: python generator_clash.py
+
+  - name: 📝 Check if changes exist
+    id: verify
+    run: |
+      if git diff --quiet; then
+        echo "changed=false" >> $GITHUB_OUTPUT
+      else
+        echo "changed=true" >> $GITHUB_OUTPUT
+      fi
+
+  - name: 📤 Commit and push
+    if: steps.verify.outputs.changed == 'true'
+    run: |
+      git config user.name "GitHub Actions"
+      git config user.email "actions@github.com"
+
+      git add merged_subscription.txt clash_subscription.yaml clash_unknown_lines.txt
+      git commit -m "🔄 Update subscriptions and clash output: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+
+      git pull --rebase origin main
+      git push origin main
+```
