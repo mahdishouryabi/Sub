@@ -1,0 +1,52 @@
+name: Update Subscriptions
+
+on:
+  schedule:
+      # Ù‡Ø± 30 Ø¯Ù‚ÛŒÙ‚Ù‡ ÛŒÚ©Ø¨Ø§Ø± Ø§Ø¬Ø±Ø§ Ø´ÙˆØ¯
+          - cron: '*/2 * * * *'
+            workflow_dispatch:
+                # Ø¯Ø³ØªÛŒ Ø§Ø¬Ø±Ø§ Ú©Ù†
+
+                permissions:
+                  contents: write
+
+                  jobs:
+                    aggregate:
+                        runs-on: ubuntu-latest
+                            
+                                steps:
+                                      - name: ðŸ“¥ Clone repository
+                                              uses: actions/checkout@v4
+                                                    
+                                                          - name: ðŸ Setup Python
+                                                                  uses: actions/setup-python@v4
+                                                                          with:
+                                                                                    python-version: '3.10'
+                                                                                          
+                                                                                                - name: ðŸ“¦ Install dependencies
+                                                                                                        run: |
+                                                                                                                  pip install requests
+                                                                                                                        
+                                                                                                                              - name: ðŸ”„ Run aggregator
+                                                                                                                                      run: python aggregator.py
+
+                                                                                                                                            - name: ðŸ” Run Clash generator
+                                                                                                                                                    run: python generator_clash.py
+                                                                                                                                                          
+                                                                                                                                                                - name: ðŸ“ Check if changes exist
+                                                                                                                                                                        id: verify
+                                                                                                                                                                                run: |
+                                                                                                                                                                                          if git diff --quiet; then
+                                                                                                                                                                                                      echo "changed=false" >> $GITHUB_OUTPUT
+                                                                                                                                                                                                                else
+                                                                                                                                                                                                                            echo "changed=true" >> $GITHUB_OUTPUT
+                                                                                                                                                                                                                                      fi
+                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                  - name: ðŸ“¤ Commit and push
+                                                                                                                                                                                                                                                          if: steps.verify.outputs.changed == 'true'
+                                                                                                                                                                                                                                                                  run: |
+                                                                                                                                                                                                                                                                            git config user.name "GitHub Actions"
+                                                                                                                                                                                                                                                                                      git config user.email "actions@github.com"
+                                                                                                                                                                                                                                                                                                git add merged_subscription.txt clash_subscription.yaml clash_unknown_lines.txt
+                                                                                                                                                                                                                                                                                                          git commit -m "ðŸ”„ Update subscriptions and clash output: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+                                                                                                                                                                                                                                                                                                                    git push
